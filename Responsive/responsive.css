@@ -1,0 +1,82 @@
+@media (min-width:320px) and ( max-width:576Px) {
+header nav .nav-wrapper .nav-ul_btn{
+  display: none;
+}
+   .mobile-menu{
+    display: block;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid green ;
+    border-radius: 5px;
+   }  
+    .container{
+      padding: 0 10px;
+    }
+    #banner .hero-wrepper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+    #banner .left h1 {
+    font-size: 49px;
+    
+    line-height: 55.4px;
+    letter-spacing: 0.72px;
+    
+}
+#banner .left h3 {
+    font-size: 14px;
+    line-height: 20.6px;
+    margin-bottom: 10px;
+}
+#banner .left p {
+    font-size: 16px;
+    line-height: 31.5px;
+    margin-bottom: 10px;
+    width: auto;
+}
+#banner .left .tack-stek h4 {
+    font-size: 11px;
+     margin-bottom: 6px;
+}
+#banner .left .tack-stek ul li {
+    font-size: 14px;
+    
+}
+#banner .right img  {
+  width: 100%;  
+}
+#banner .left button {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    padding: 9.5px 15px 11.5px 16px;
+  
+}
+#abuot .abuot-wrapper .left h3 {
+  width: auto;
+    font-size: 28px;
+    line-height: 29.8px;
+}
+#abuot .abuot-wrapper .left p {
+   
+    width: auto;
+}
+
+#abuot .abuot-wrapper {
+    flex-direction: column; 
+  
+  
+  }
+  #abuot .skills-areia {
+   display:grid;
+    gap: 5px;
+    grid-template-columns: 3,2fr;
+    width: auto;
+}
+#abuot .right .about-card {
+    display: inline-block;
+    padding: 5px 29.17px 7px 17.17px;
+
+}
+}
