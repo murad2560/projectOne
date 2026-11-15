@@ -1,50 +1,127 @@
+/* ======= MURAD.COM - FULL MOBILE RESPONSIVE ======= */
 
-@media (min-width: 120px) and (max-width: 576px) {
-  header .nav-ul-btn{
-    display: none;
+/* ===== Tablet - 1024px ===== */
+@media (max-width: 1024px) {
+  .container { padding: 0 24px; }
+  #banner .left p { width: 100%; }
+  #banner .right img { width: 320px; height: auto; }
+  #abuot .left, #abuot .right { width: 100%; height: auto; }
+  #contact-me .contact-aria .left { width: 100%; height: auto; }
+  #contact-me .contact-aria .right .right-wrepper { width: 100%; height: auto; }
+}
+
+/* ===== Mobile - 768px ===== */
+@media (max-width: 768px) {
+
+  /* --- Header / Menu --- */
+  header { padding-bottom: 15px; }
+  header nav .nav-wrapper { padding: 0 16px; }
+
+  .mobile-menu {
+    display: block !important;
+    border: 1.5px solid #000;
+    background: #fff;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 20px;
+    cursor: pointer;
   }
-  .mobile-menu{
+
+  header nav .nav-wrapper .nav-ul_btn {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 10px 20px 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.10);
+    z-index: 999;
+  }
+  header nav .nav-wrapper .nav-ul_btn.active {
+    display: flex;
+  }
+  header nav .nav-wrapper .nav-ul_btn ul {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+  header nav .nav-wrapper .nav-ul_btn ul li {
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+  }
+  header nav .nav-wrapper .nav-ul_btn ul li a {
+    font-size: 14px;
     display: block;
   }
-  .mobile-menu img{
-    width: 30px;
-    padding: 10px;
-    background: transparent;
-    border: 1px solid green;
-    border-radius: 5px;
+  header nav .nav-wrapper .nav-ul_btn button {
+    margin-top: 16px;
+    width: 100%;
   }
-  .container{
-    padding: 0 10px;
+
+  /* --- Banner --- */
+  #banner { margin-top: 50px; }
+  #banner .hero-wrepper { flex-direction: column; }
+  #banner .left h1 { font-size: 38px; line-height: 46px; letter-spacing: -0.5px; }
+  #banner .left h3 { font-size: 19px; line-height: 28px; }
+  #banner .left p { width: 100%; font-size: 16px; line-height: 26px; }
+  #banner .left button { width: 100%; padding: 14px 0; }
+  #banner .left .contact-btn { margin-left: 0; margin-top: 12px; }
+  #banner .left .tack-stek ul li { margin-bottom: 8px; }
+  #banner .right img { width: 100%; height: auto; margin-top: 30px; margin-bottom: 60px; }
+
+  /* --- About --- */
+  #abuot .abuot-wrapper { flex-direction: column; }
+  #abuot .left { margin-right: 0; margin-bottom: 30px; height: auto; }
+  #abuot .skills-areia { grid-template-columns: 1fr 1fr; gap: 12px; }
+  #abuot .right .about-card { padding: 14px 8px; }
+  #abuot .right .about-card h5 { font-size: 13px; }
+
+  /* --- Projects --- */
+  #projects .container { padding: 0 16px 60px 16px; }
+  #projects .container .project_container { grid-template-columns: 1fr; row-gap: 24px; }
+  #projects .container .project_container .project_card .card_content .card_description { height: auto; }
+
+  /* --- Contact --- */
+  #contact-me .contact-aria { flex-direction: column; }
+  #contact-me .contact-aria .left { height: auto; }
+  #contact-me .contact-aria .left p { width: 100%; height: auto; margin-right: 0; font-size: 16px; line-height: 26px; }
+  #contact-me .contact-aria .right { margin-left: 0; margin-top: 30px; }
+  #contact-me .contact-aria .right .right-wrepper { padding-bottom: 24px; height: auto; }
+  #contact-me .contact-aria .right .right-wrepper .right-aria input {
+    width: calc(100% - 64px);
   }
-  .banner .hero-wrapper{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  #contact-me .right .right-wrepper .right-aria button {
+    width: calc(100% - 64px);
+    padding: 13px 0;
   }
-  .banner .left h1{
-    font-size: 40px;
-    line-height: 55.4px;
-    letter-spacing: 0.2px;
+
+  /* --- Footer --- */
+  #end-part .end-wrepper { margin-top: 60px; padding: 30px 20px; }
+  #end-part .end-wrepper .end-aria { flex-direction: column; align-items: flex-start; }
+}
+
+/* ===== Choto Mobile - 480px ===== */
+@media (max-width: 480px) {
+  #banner .left h1 { font-size: 32px; line-height: 40px; }
+
+  /* About Card - Mobile e 2 ta korei thakbe */
+  #abuot .skills-areia {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
-  .banner .left h2{
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 10px;
+  #abuot .right .about-card {
+    padding: 12px 6px;
   }
-  /* BANNER IMG - MOBILE E JATE NA HARAY */
-  .banner .right,
-  .banner .hero-img{
-    display: block !important;
-    width: 100% !important;
+  #abuot .right .about-card h5 {
+    font-size: 12px;
   }
-  .banner img,
-  .banner .right img,
-  .banner .hero-img img{
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-  }
+
+  #abuot .abuot-wrapper .left h3,
+  #contact-me .contact-aria .left h2,
+  #projects .container h2 { font-size: 28px; line-height: 36px; }
 }
