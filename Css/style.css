@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inder&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
+:root{
+  --plus_font: "Plus Jakarta Sans", sans-serif;
+  --inter_font: "Inter", sans-serif;
+  --heading_font_color: #191c1d;
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -17,6 +23,7 @@ header {
   margin-top: 20px;
   border-bottom: 1px solid #e5e7eb;
   padding-bottom: 20px;
+  position: relative;
 }
 header nav .nav-wrapper {
   display: flex;
@@ -51,6 +58,7 @@ header nav .nav-wrapper .nav-ul_btn button {
   padding: 10px 20px;
   border-radius: 999px;
   box-shadow: 0px 8px 18px -6px rgba(53, 37, 205, 0.2);
+  cursor: pointer;
 }
 /*=============header part end ==========  */
 /* =========== banner part start ========== */
@@ -61,7 +69,6 @@ header nav .nav-wrapper .nav-ul_btn button {
 #banner {
   margin-top: 152.7px;
 }
-
 #banner .left h1 {
   font-size: 64px;
   font-weight: 800;
@@ -73,7 +80,7 @@ header nav .nav-wrapper .nav-ul_btn button {
 }
 #banner .left h3 {
   font-size: 24px;
-  font-variant: 400;
+  font-weight: 400;
   line-height: 33.6px;
   letter-spacing: 0px;
   color: #575e70;
@@ -101,8 +108,8 @@ header nav .nav-wrapper .nav-ul_btn button {
   letter-spacing: 0.6px;
   padding: 12.5px 32px 13.5px 32px;
   border: 1px solid #3525cd;
+  cursor: pointer;
 }
-
 #banner .left .contact-btn {
   background: #ffffff;
   color: #191c1d;
@@ -112,7 +119,6 @@ header nav .nav-wrapper .nav-ul_btn button {
 #banner .left .tack-stek {
   margin-top: 48px;
 }
-
 #banner .left .tack-stek h4 {
   color: #bababa;
   font-size: 12px;
@@ -122,13 +128,12 @@ header nav .nav-wrapper .nav-ul_btn button {
   font-family: "Inter", sans-serif;
   margin-bottom: 16px;
 }
-
 #banner .left .tack-stek ul li {
   color: #3525cd;
   background: rgba(53, 37, 205, 0.1);
   font-size: 14px;
   font-weight: 500;
-  line-height: 21pz;
+  line-height: 21px;
   letter-spacing: 0px;
   font-family: "Inter", sans-serif;
   display: inline-block;
@@ -138,7 +143,6 @@ header nav .nav-wrapper .nav-ul_btn button {
 #banner .left .tack-stek ul li a {
   text-decoration: none;
 }
-
 #banner .right img {
   width: 400px;
   height: 390px;
@@ -154,11 +158,9 @@ header nav .nav-wrapper .nav-ul_btn button {
   height: 394.66px;
   margin-right: 64.1px;
 }
-
 #abuot .right {
   width: 645.33px;
 }
-
 #abuot .abuot-wrapper {
   display: flex;
 }
@@ -200,7 +202,7 @@ header nav .nav-wrapper .nav-ul_btn button {
 #abuot .right .about-card {
   border: 1px solid #e5e7eb;
   display: inline-block;
-  padding: 18px 41.17px 18px 41.17px;
+  padding: 16px 16px;
   text-align: center;
   border-radius: 14px;
 }
@@ -218,41 +220,33 @@ header nav .nav-wrapper .nav-ul_btn button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
 /*  ========== abuot part end =============  */
-/* =================  Projects part start======== */
 /* ================= Projects starts ================= */
-
-
 #projects .container {
   padding: 0px 24px 127px 24px;
 }
-
 #projects .container h2 {
   font-family: var(--plus_font);
-  font-size: 2.25rem; /* 36px */
+  font-size: 2.25rem;
   font-weight: bold;
   line-height: 46.8px;
   letter-spacing: -0.36px;
   color: var(--heading_font_color);
   margin-bottom: 7px;
 }
-
 #projects .container .subtitle {
   font-family: var(--inter_font);
-  font-size: 1rem; /* 16px */
+  font-size: 1rem;
   font-weight: 400;
   line-height: 25.6px;
   color: #575e70;
   margin-bottom: 48px;
 }
-
 #projects .container .project_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 32px;
 }
-
 #projects .container .project_container .project_card {
   display: flex;
   flex-direction: column;
@@ -260,156 +254,111 @@ header nav .nav-wrapper .nav-ul_btn button {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.392);
-  -webkit-box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.392);
-  -moz-box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.392);
 }
-
+#projects .container .project_container .project_card img{
+  width: 100%;
+}
 #projects .container .project_container .project_card .card_content {
   padding: 24px;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
-
 #projects .container .project_container .project_card .card_content .card_head {
   font-family: var(--plus_font);
-  font-size: 1.5rem; /* 24px */
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 33.6px;
   color: #191c1d;
   margin-bottom: 8.39px;
 }
-
-#projects
-  .container
-  .project_container
-  .project_card
-  .card_content
-  .card_description {
+#projects .container .project_container .project_card .card_content .card_description {
   font-family: var(--inter_font);
-  font-size: 1rem; /* 16px */
+  font-size: 1rem;
   font-weight: 400;
   line-height: 25.6px;
   color: #464555;
-  height: 103px;
   width: 100%;
   margin-bottom: auto;
-
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-#projects
-  .container
-  .project_container
-  .project_card
-  .card_content
-  .stacks_portion {
+#projects .container .project_container .project_card .card_content .stacks_portion {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-top: 16.49px;
   margin-bottom: 24px;
 }
-
-#projects
-  .container
-  .project_container
-  .project_card
-  .card_content
-  .stacks_portion
-  .stack_title {
+#projects .container .project_container .project_card .card_content .stacks_portion .stack_title {
   font-family: var(--inter_font);
-  font-size: 0.75rem; /* 12px */
+  font-size: 0.75rem;
   font-weight: 600;
   color: #575e70;
   line-height: 18px;
   letter-spacing: 1.2px;
 }
-
-#projects
-  .container
-  .project_container
-  .project_card
-  .card_content
-  .stacks_portion
-  .stack_list
-  ul {
+#projects .container .project_container .project_card .card_content .stacks_portion .stack_list ul {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   padding: 0;
   margin: 0;
 }
-
-#projects
-  .container
-  .project_container
-  .project_card
-  .card_content
-  .stacks_portion
-  .stack_list
-  ul
-  li {
+#projects .container .project_container .project_card .card_content .stacks_portion .stack_list ul li {
   list-style: none;
   padding: 4px 8px;
   border-radius: 4px;
   background-color: #e1e3e4;
   color: #464555;
   font-family: var(--inter_font);
-  font-size: 0.875rem; /* 14px */
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 16.5px;
   text-align: center;
 }
-
-#projects  .container .project_container .project_card .card_content .cta_btns {
+#projects .container .project_container .project_card .card_content .cta_btns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-  
 }
-
 #projects .container .project_container .project_card .card_content .btn_one {
   padding: 8px 16px 10px;
   text-align: center;
-   background : #3525CD;
+  background: #3525CD;
   font-size: 12px;
-  font-family: var(--inter_font); 
-   line-height:18px ;
+  font-family: var(--inter_font);
+  line-height: 18px;
   letter-spacing: 0.6px;
   font-weight: 600;
- color: #FFFFFF;
- 
-
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
 }
-
 #projects .container .project_container .project_card .card_content .btn_two {
   padding: 8px 16px;
   text-align: center;
   color: #191c1d;
   background-color: #ffffff;
   border: 1px solid #c7c4d8;
+  cursor: pointer;
 }
-
 /* ================= Projects ends ================= */
-  
 /* ============ contact me part start ================= */
 #contact-me .contact-aria .left{
   width: 544px;
   height: 308.8px;
 }
 #contact-me .contact-aria .left h2{
-font-size: 36px;
-font-weight:700 ;
-line-height: 46.8px;
-letter-spacing: -0.36px;
-color: #191C1D;
-font-family: "Plus Jakarta Sans", sans-serif;
-
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46.8px;
+  letter-spacing: -0.36px;
+  color: #191C1D;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 #contact-me .contact-aria{
   display: flex;
@@ -419,124 +368,87 @@ font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
   line-height: 31.5px;
   letter-spacing: 0px;
- color: #464555;
- width: 448px;
- height: 126px;
- margin-top: 16px;
- margin-bottom: 24px;
- margin-right: 96px;
+  color: #464555;
+  width: 448px;
+  height: 126px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  margin-right: 96px;
   font-family: "Inter", sans-serif;
 }
-#contact-me 
-.contact-aria 
-.left .ul-list
-.one{
+#contact-me .contact-aria .left .ul-list .one{
   display: flex;
   align-items: center;
   gap: 16px;
   margin-bottom: 16px;
 }
-#contact-me 
-.contact-aria 
-.left .ul-list
-.one h4{
+#contact-me .contact-aria .left .ul-list .one h4{
   font-size: 14px;
   font-weight: 400;
-  line-height:21px ;
+  line-height: 21px;
   letter-spacing: 0px;
-  color:#191C1D ;
- font-family: "Inter", sans-serif;
- 
-  
+  color: #191C1D;
+  font-family: "Inter", sans-serif;
 }
-#contact-me 
-.contact-aria 
-.left .ul-list a{
+#contact-me .contact-aria .left .ul-list a{
   text-decoration: none;
 }
-#contact-me 
-.contact-aria
-.right
-.right-wrepper{
+#contact-me .contact-aria .right .right-wrepper{
   width: 544px;
   height: 484px;
   background: #F8F9FA;
   border-radius: 16px;
-
 }
-#contact-me 
-.contact-aria 
-.right{
+#contact-me .contact-aria .right{
   margin-left: 64px;
 }
-
-
-  
-  
-
-#contact-me 
-.contact-aria 
-.right
-.right-wrepper
-.right-aria input{
-width: 478px;
- height: 49px;
- margin-left: 32px;
- margin-right: 32px;
+#contact-me .contact-aria .right .right-wrepper .right-aria input{
+  width: 478px;
+  height: 49px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 0;
   font-size: 16px;
   font-weight: 400;
-  line-height: auto;
-  color: #6B72;
+  line-height: normal;
+  color: #6B7280;
   font-family: "Inter", sans-serif;
   padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: block;
 }
-#contact-me 
-.contact-aria 
-.right
-.right-wrepper
-.right-aria h5{
+#contact-me .contact-aria .right .right-wrepper .right-aria h5{
   font-size: 12px;
-  font-weight:600 ;
+  font-weight: 600;
   line-height: 18px;
-  letter-spacing:1.2px ;
+  letter-spacing: 1.2px;
   color: #575E70;
-   font-family: "Inter", sans-serif;
-   margin: 32px 32px 8px 32px;
-   margin-top: 32px;
+  font-family: "Inter", sans-serif;
+  margin: 32px 32px 8px 32px;
+  margin-top: 32px;
 }
-#contact-me 
-.contact-aria 
-.right
-.right-wrepper
-.right-aria .form-three{
-padding: 12px 16px 84px 16px;
+#contact-me .contact-aria .right .right-wrepper .right-aria .form-three{
+  padding: 12px 16px 84px 16px;
 }
-
-
-
-
-#contact-me 
-.right
-.right-wrepper
-.right-aria 
-button{
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.6px;
-    color: #FFFFFF;
-    border: none;
-    background-color: #3525CD;
-    margin-top: 24px;
-    padding: 12px 192.5px;
-    margin-left: 32px;
-    margin-right: 32px;
+#contact-me .right .right-wrepper .right-aria button{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  color: #FFFFFF;
+  border: none;
+  background-color: #3525CD;
+  margin-top: 24px;
+  padding: 12px 192.5px;
+  margin-left: 32px;
+  margin-right: 32px;
+  cursor: pointer;
 }
 /* ============ contact me part end ====================*/
-
 /*  =========== end part strt ============ */
-#end-part  h6{
+#end-part h6{
   font-size: 16px;
   font-weight: 700;
   line-height: 25.6px;
@@ -545,28 +457,19 @@ button{
   width: auto;
   height: auto;
   margin: 0;
-  
-
- 
 }
 #end-part .end-wrepper{
- background: rgba(199, 196, 216,0.10);
-margin-top: 130px;
-padding: 40px 48px;
-
-
+  background: rgba(199, 196, 216,0.10);
+  margin-top: 130px;
+  padding: 40px 48px;
 }
 #end-part .end-wrepper .end-aria ul {
-  
   align-items: center;
   display: flex;
   gap: 24px;
   margin: 0;
   padding: 0;
-  
-  
 }
-
 #end-part .end-wrepper .end-aria ul li{
   list-style: none;
   font-size: 12px;
@@ -575,14 +478,11 @@ padding: 40px 48px;
   letter-spacing: 0.6px;
   color: #575E70;
   font-family: "Inter", sans-serif;
- }
-
- #end-part .end-wrepper .end-aria {
+}
+#end-part .end-wrepper .end-aria {
   display: flex;
- justify-content: space-between;
-align-items: center;
-
-gap: 20px;
-
- }
-/*  =========== end part strt ============ */
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+/*  =========== end part end ============ */
